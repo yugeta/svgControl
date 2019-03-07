@@ -23,5 +23,5 @@ SVG control
 
     convert to
 
-    &lt;svg>&gt;...&lt;/svg&gt;
+    <svg>...</svg>
 
