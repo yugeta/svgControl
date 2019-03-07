@@ -14,14 +14,14 @@ SVG control
 # How to use
 
   1. load "svgLoad.js"
-    <script src="svgLoad.js"></script>
+    &lt;script src="svgLoad.js"&gt;&lt;/script&gt;
 
   2. .html insert
-    <img src="sample.svg">
+    &lt;img src="sample.svg"&gt;
     or
-    <svg src="sample.svg">
+    &lt;svg src="sample.svg"&gt;
 
     convert to
 
-    <svg>...</svg>
+    &lt;svg>&gt;...&lt;/svg&gt;
 
