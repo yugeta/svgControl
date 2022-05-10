@@ -1,0 +1,179 @@
+
+<svg width="650" height="700" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<style>
+  :root{
+    --size-margin:10;
+    --pos-line-x:110;
+  }
+
+  *{
+    font-size:12px;
+  }
+  g{
+    position:absolute;
+  }
+  .frame{
+    fill:white;
+    stroke:black;
+    stroke-width:1px;
+    height:30px;
+  }
+  .names{
+    fill:white;
+    stroke:black;
+    stroke-width:1px;
+  }
+  text{
+    fill:black;
+    text-anchor:middle;
+  }
+  text.left{
+    text-anchor:start;
+  }
+
+  line{
+    stroke : black;
+    stroke-width : 1;
+  }
+
+  rect.caption{
+    fill:#086375;
+  }
+  text.white{
+    fill:white;
+  }
+
+  
+
+  .list-1{
+    
+  }
+  .list-1{
+    /*transform:translate(50px,0px);*/
+  }
+  .list-1 rect{
+    x : calc(var(--size-margin) + 0);
+  }
+
+  .list-2{
+    transform:translate(200px , 100px);
+  }
+  .list-2 rect.frame{
+    x : 40;
+  }
+  .list-2 rect.names{
+    x : 40;
+  }
+  .list-2 rect.text{
+    x : 40;
+  }
+  .list-2 text.caption-text{
+    x : 250!important;
+  }
+  line.mini{
+    display:none;
+  }
+  @media (max-width: 600px){
+    svg{
+      height:750px;
+    }
+   .list-2{
+      transform:translate(0px , 160px);
+    }
+    line.wide{
+      display:none;
+    }
+    line.mini{
+      display:block;
+    }
+  }
+</style>
+
+<g class='list-1'>
+  <g class='test-1'>
+    <rect class='frame' y="10" width="200"></rect>
+    <text x='110' y='31'>工学系研究科長</text>
+  </g>
+
+  <line x1="110" x2="110" y1="40" y2="70"></line>
+
+  <g>
+    <rect class='frame' y="70" width="200"></rect>
+    <text x='110' y='91'>運営委員会</text>
+  </g>
+
+    <line x1="110" x2="110" y1="100" y2="130"></line>
+
+  <g>
+    <rect class='frame' y="130" width="200"></rect>
+    <text x='110' y='151'>ナノシステム集積センター長</text>
+  </g>
+</g>
+
+<g class='list-2'>
+  <g>
+    <line x1="10" y1="45"  x2="40" y2="45"  class='wide'></line>
+    <line x1="25" y1="45"  x2="40" y2="45"  class='mini'></line>
+    <line x1="25" y1="45"  x2="25" y2="495" class='wide'></line>
+    <line x1="25" y1="0"   x2="25" y2="495" class='mini'></line>
+    <line x1="25" y1="95"  x2="40" y2="95"></line>
+    <line x1="25" y1="205" x2="40" y2="205"></line>
+    <line x1="25" y1="395" x2="40" y2="395"></line>
+    <line x1="25" y1="495" x2="40" y2="495"></line>
+  </g>
+
+  <g>
+    <g>
+      <rect class='frame' y="30" width="200"></rect>
+      <text x='140' y='51'>センター会議</text>
+    </g>
+
+    <g>
+      <rect class='frame caption' y="80" width="400"></rect>
+      <text class='left white caption-text' x='50' y='101'>共通設備管理運営部門　部門長：霜垣幸浩　教授</text>
+      <rect class='names' y="110" width="400" height="50"></rect>
+      <text class='left' x='50' y='131'>特任専門員</text>
+    </g>
+
+    <g>
+      <rect class='frame caption' y="180" width="400"></rect>
+      <text class='left white caption-text' x='50' y='201'>デバイス試作開発部門　部門長：三田吉郎　准教授</text>
+
+      <rect class='names' y="210" width="400" height="150"></rect>
+      <text class='left' x='50' y='231'>池田誠 教授</text>
+      <text class='left' x='50' y='261'>一木隆範 教授</text>
+      <text class='left' x='50' y='291'>岩佐義宏 教授</text>
+      <text class='left' x='50' y='321'>内田健 教授</text>
+      <text class='left' x='50' y='351'>高木信一 教授</text>
+
+      <text class='left' x='150' y='231'>田中雅明 教授</text>
+      <text class='left' x='150' y='261'>田畑　仁 教授</text>
+      <text class='left' x='150' y='291'>長汐晃輔 教授</text>
+      <text class='left' x='150' y='321'>中野義昭 教授</text>
+      <text class='left' x='150' y='351'>大矢 忍 准教授</text>
+
+      <text class='left' x='250' y='231'>種村拓夫 准教授</text>
+      <text class='left' x='250' y='261'>ドロネー ジャンジャック 准教授</text>
+      <text class='left' x='250' y='291'>横田知之 准教授</text>
+    </g>
+
+    <g>
+      <rect class='frame caption' y="380" width="400"></rect>
+      <text class='left white caption-text' x='50' y='401'>オープンイノベーション推進部門　部門長：塩見淳一郎　教授</text>
+      
+      <rect class='names' y="410" width="400" height="50"></rect>
+      <text class='left' x='50' y='431'>竹中充　教授</text>
+    </g>
+
+    <g>
+      <rect class='frame caption' y="480" width="400"></rect>
+      <text class='left white caption-text' x='50' y='501'>新川崎サテライト部門　部門長：三宅亮　教授</text>
+
+      <rect class='names' y="510" width="400" height="60"></rect>
+      <text class='left' x='50' y='531'>高井まどか　教授</text>
+      <text class='left' x='50' y='561'>丸山茂夫　教授</text>
+      <text class='left' x='150' y='531'>馬渡和真　准教授</text>
+    </g>
+  </g>
+</g>
+</svg>

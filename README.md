@@ -1,27 +1,26 @@
-SVG control
-==
+SvgControl
+===
+```
+Date    : 2022.05.10
+Author  : Yugeta.Koji
+Version : 2.0.0
+```
 
+# Summary
+- svgファイルをhtml内に読み込んでjavascriptなどでコントロールできるようにする。
+- imgタグのsvgファイルをsvgタグに入れ替える処理。
 
-# Summery
+# Howto
+- headタグ内に記載
+<script src='svgControl/src/svgControl.js'></script>
 
-  - Control CSS
-    change color
-    set animation
+- ページonload以後に実行
+<script>
+new SvgControl({
+  exclusion_style_tag : true,  // svg内のstyleタグを除外します。 (記入しない場合はfalse扱い)
+})
+</script>
 
-  - Convert in WebPage All img-tag and svg-tag(add:src-attribute)
-
-
-# How to use
-
-  1. load "svgLoad.js"
-    &lt;script src="svgLoad.js"&gt;&lt;/script&gt;
-
-  2. .html insert
-    &lt;img src="sample.svg"&gt;
-    or
-    &lt;svg src="sample.svg"&gt;
-
-    convert to
-
-    <svg>...</svg>
+# Sample
+- sampleフォルダ内を参考
 

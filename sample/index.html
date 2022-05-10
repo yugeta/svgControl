@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <title>SVG-Control</title>
+  <script src="../src/svgControl.js"></script>
+</head>
+<body>
+  <h1>SvgControl</h1>
+  <img src='sample.svg'>
+  <svg src='sample.svg'></svg>
+  <script>
+    new SvgControl({
+      exclusion_style_tag : false,
+    })
+  </script>
+</body>
+</html>
